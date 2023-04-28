@@ -4,14 +4,15 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && vue-tsc && vite build",
     "preview": "vite preview",
     "test:e2e": "cypress run",
     "test:unit": "vitest",
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/android": "4.8.0",
     "@capacitor/app": "4.1.1",
     "@capacitor/core": "4.8.0",
     "@capacitor/haptics": "4.1.0",
